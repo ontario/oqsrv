@@ -9,7 +9,7 @@ int main()
 {
     Connection con(false);
 
-    if ( con.connect("ogame_dev","localhost","root","uu7-W23#") )
+    if ( con.connect("ogame_dev","localhost","root","") )
     {
         Query query = con.query("SELECT * FROM user");
         if ( StoreQueryResult res = query.store() )
